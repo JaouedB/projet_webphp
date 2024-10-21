@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="page_user.css">
+</head>
+<body>
+    <div id="img">
+        <figure>
+          <img src="img/monstre.jpg" alt>
+        </figure>
+    </div>
+
+    <h1 class="titre">Citations</h1>
+    <form action="pro_citations.php" method="post" class="citations">
+        Nom de l'auteur: <input type="text" name="name" required><br>
+        Citations: <textarea name="citations" rows="6" cols="40" required></textarea><br>
+        <input type="submit" value="Poster">
+    </form>
+
+    <h2 class="citation-titre">Liste des Citations</h2>
+    <div class="citation-list">
+        <iframe src="liste_citations.php" style="border:none; width:100%; height:300px;"></iframe>
+    </div>
+</body>
+</html>
